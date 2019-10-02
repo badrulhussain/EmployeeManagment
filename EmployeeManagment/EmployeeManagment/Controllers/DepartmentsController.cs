@@ -6,18 +6,14 @@ using System.Threading.Tasks;
 
 namespace EmployeeManagment.Controllers
 {
-    [Route("[controller]")]
+    [Route("[controller]/[action]")]
     public class DepartmentsController : Controller
     {
-        [Route("[action]")]
-        [Route("")] // Makes List(), the default action
-
         public string List()
         {
             return "List() of DepartmentsController";
         }
 
-        [Route("[action]")]
         public string Details()
         {
             return "Details() of DepartmentsController";
