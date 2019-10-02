@@ -10,11 +10,11 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace EmployeeManagment.Controllers
 {
-    public class HomeController : Controller
+    public class WelcomeController : Controller
     {
         private IEmployeeRepository _employeeRepository;
 
-        public HomeController(IEmployeeRepository employeeRepository)
+        public WelcomeController(IEmployeeRepository employeeRepository)
         {
             _employeeRepository = employeeRepository;
         }
@@ -22,9 +22,9 @@ namespace EmployeeManagment.Controllers
         [Route("")]
         [Route("Home")]
         [Route("Home/Index")]
-        public ActionResult Index()
+        public ActionResult List()
         {
-            return View(_employeeRepository.GetAll());
+            return View("~/Views/Home/Index.cshtml", _employeeRepository.GetAll());
         }
 
         [Route("Home/Details/{Id?}")]
