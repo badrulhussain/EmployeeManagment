@@ -36,11 +36,10 @@ namespace EmployeeManagment
             }
 
             app.UseStaticFiles();
-            app.UseMvcWithDefaultRoute();
-            //app.Run(async (context) =>
-            //{
-            //    await context.Response.WriteAsync(_config["MyKey"]);
-            //});
+            //app.UseMvcWithDefaultRoute();
+            app.UseMvc(routes => {
+                routes.MapRoute("default", "{controller=Home}/{action=Index}/{id?}");
+                });
         }
     }
 }

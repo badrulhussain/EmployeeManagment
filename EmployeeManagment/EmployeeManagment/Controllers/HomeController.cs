@@ -24,12 +24,14 @@ namespace EmployeeManagment.Controllers
             return View(_employeeRepository.GetAll());
         }
 
-        public ActionResult Details()
+        public ActionResult Details(int Id)
         {
+            if (Id == 0)
+                Id = 1;
 
             var EmployeeModel = new HomeDetailsViewModel()
             {
-                Employee = _employeeRepository.GetById(1),
+                Employee = _employeeRepository.GetById(Id),
                 PageTitle = "Details Page"
             };
 
