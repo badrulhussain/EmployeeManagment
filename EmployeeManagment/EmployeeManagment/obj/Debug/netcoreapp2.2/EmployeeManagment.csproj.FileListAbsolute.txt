@@ -26,3 +26,4 @@ C:\Users\PC\Documents\GitHub\DotNetCOR\EmployeeManagment\EmployeeManagment\Emplo
 C:\Users\PC\Documents\GitHub\DotNetCOR\EmployeeManagment\EmployeeManagment\EmployeeManagment\obj\Debug\netcoreapp2.2\EmployeeManagment.dll
 C:\Users\PC\Documents\GitHub\DotNetCOR\EmployeeManagment\EmployeeManagment\EmployeeManagment\obj\Debug\netcoreapp2.2\EmployeeManagment.pdb
 C:\Users\PC\Documents\GitHub\DotNetCOR\EmployeeManagment\EmployeeManagment\EmployeeManagment\obj\Debug\netcoreapp2.2\EmployeeManagment.csproj.CopyComplete
+C:\Users\PC\Documents\GitHub\DotNetCOR\EmployeeManagment\EmployeeManagment\EmployeeManagment\obj\Debug\netcoreapp2.2\EmployeeManagment.csprojAssemblyReference.cache

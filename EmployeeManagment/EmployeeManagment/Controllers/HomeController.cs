@@ -19,19 +19,21 @@ namespace EmployeeManagment.Controllers
             _employeeRepository = employeeRepository;
         }
         // GET: /<controller>/
+        [Route("")]
+        [Route("Home")]
+        [Route("Home/Index")]
         public ActionResult Index()
         {
             return View(_employeeRepository.GetAll());
         }
 
-        public ActionResult Details(int Id)
+        [Route("Home/Details/{Id?}")]
+        public ActionResult Details(int? Id)
         {
-            if (Id == 0)
-                Id = 1;
 
             var EmployeeModel = new HomeDetailsViewModel()
             {
-                Employee = _employeeRepository.GetById(Id),
+                Employee = _employeeRepository.GetById(Id??1),
                 PageTitle = "Details Page"
             };
 
