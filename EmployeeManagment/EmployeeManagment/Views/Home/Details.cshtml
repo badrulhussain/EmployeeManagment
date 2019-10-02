@@ -1,0 +1,38 @@
+﻿@model EmployeeManagment.ViewModels.HomeDetailsViewModel
+
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    ViewBag.Title = "Employee Details";
+
+}
+<table>
+    <thead>
+        <tr>
+            <th>
+                Id
+            </th>
+            <th>
+                Name
+            </th>
+            <th>
+                Depratment
+            </th>
+            <th>
+                Email
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>@Model.Employee.Id</td>
+            <td>@Model.Employee.Name</td>
+            <td>@Model.Employee.Department</td>
+            <td>@Model.Employee.Email</td>
+        </tr>
+    </tbody>
+</table>
+
+@section Scripts
+    {
+    <script src="~/js/CustomScript.js"></script>
+}
