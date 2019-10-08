@@ -10,7 +10,7 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace EmployeeManagment.Controllers
 {
-        [Route("Home")]
+    //[Route("Home")]
     public class HomeController : Controller
     {
         private IEmployeeRepository _employeeRepository;
@@ -20,15 +20,15 @@ namespace EmployeeManagment.Controllers
             _employeeRepository = employeeRepository;
         }
         // GET: /<controller>/
-        [Route("/")]
-        [Route("")]
-        [Route("Index")]
+        //[Route("/")]
+        //[Route("")]
+        //[Route("Index")]
         public ActionResult Index()
         {
             return View(_employeeRepository.GetAll());
         }
 
-        [Route("Details/{Id?}")]
+        //[Route("Details/{Id?}")]
         public ActionResult Details(int? Id)
         {
 
